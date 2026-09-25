@@ -55,7 +55,7 @@ The calculation is performed entirely by the digital circuits implemented in the
 
 > **Note:** The simulation runs with a **20 Hz clock**. Any visible delays during the calculation are therefore a consequence of the intentionally low simulation clock frequency, not a limitation of the calculator architecture.
 
-[▶️ Watch the demonstration video](VIDEO-LINK)
+<video src="https://github.com/user-attachments/assets/db77724a-06a3-43e5-8054-d779186bd469" controls width="800"></video>
 
 
 ## Project Source
