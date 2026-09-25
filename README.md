@@ -47,8 +47,8 @@ Python must be installed on the system.
 
 The following demonstration shows Calculator 2.0 performing a complete sequence of chained operations:
 
-**187 + 45.23 − 587 = −354.77**
-**−354.77 × −25.21 = 8943.7517**
+**187 + 45.23 − 587 = −354.77**<br>
+**−354.77 × −25.21 = 8943.7517**<br>
 **8943.7517 ÷ 145.25 = 61.5748**
 
 The calculation is performed entirely by the digital circuits implemented in the CircuitVerse project, including the custom decimal floating-point arithmetic and sequential division.
