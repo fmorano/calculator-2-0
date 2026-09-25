@@ -108,6 +108,15 @@ FP-DIVISION
 
 The 32-bit implementation uses dedicated load/shift, right-shift, MSB detection and bit-reversal circuits.
 
+## Documentation
+
+- [Architecture](./architecture.md) — overall system architecture and data flow
+- [Control Unit](./control-unit.md) — clock, scheduling and operation control
+- [Arithmetic](./arithmetic.md) — adders, subtraction and multiplication
+- [Division](./division.md) — integer and sequential division architecture
+- [Floating Point](./floating-point.md) — custom decimal floating-point arithmetic
+- [Circuits](./circuits.md) — description of all 36 circuits and their dependencies
+
 ## Project Structure
 
 The canonical source project is:
@@ -123,17 +132,6 @@ The offline simulator is distributed separately in:
 ```text
 Calculator-2.0-Offline/
 ```
-
-## Documentation
-
-Additional documentation describes:
-
-* overall architecture
-* control unit
-* arithmetic circuits
-* division
-* floating-point arithmetic
-* all 36 circuits and their dependencies
 
 ## License
 
