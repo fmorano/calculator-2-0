@@ -20,7 +20,7 @@ Download:
 
 The package contains:
 
-* `calculator37.cv` — the complete Calculator 2.0 project
+* `Calculator-2.0.cv` — the complete Calculator 2.0 project
 * `run.sh` — launcher for Linux
 * `run.bat` — launcher for Windows
 * a local CircuitVerse simulator runtime
@@ -103,7 +103,7 @@ The 32-bit implementation uses dedicated load/shift, right-shift, MSB detection 
 The canonical source project is:
 
 ```text
-calculator37.cv
+Calculator-2.0.cv
 ```
 
 It contains all 36 circuits in a single CircuitVerse project.
