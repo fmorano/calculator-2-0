@@ -43,6 +43,21 @@ run.bat
 
 Python must be installed on the system.
 
+## 🎬 Demo
+
+The following demonstration shows Calculator 2.0 performing a complete sequence of chained operations:
+
+**187 + 45.23 − 587 = −354.77**
+**−354.77 × −25.21 = 8943.7517**
+**8943.7517 ÷ 145.25 = 61.5748**
+
+The calculation is performed entirely by the digital circuits implemented in the CircuitVerse project, including the custom decimal floating-point arithmetic and sequential division.
+
+> **Note:** The simulation runs with a **20 Hz clock**. Any visible delays during the calculation are therefore a consequence of the intentionally low simulation clock frequency, not a limitation of the calculator architecture.
+
+[▶️ Watch the demonstration video](VIDEO-LINK)
+
+
 ## Project Source
 
 The canonical CircuitVerse project is:
