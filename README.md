@@ -1,26 +1,24 @@
 # Calculator 2.0
 
-A complete digital calculator built in [CircuitVerse](https://circuitverse.org/), composed of **36 interconnected digital subcircuits**.
+A complete digital calculator designed and built in [CircuitVerse](https://circuitverse.org/), composed of **36 interconnected digital subcircuits**.
 
-Calculator 2.0 implements integer and custom floating-point arithmetic, decimal input/output, registers, shifters, multiplication, subtraction and sequential division, together with a clocked control architecture.
+Calculator 2.0 is a hardware-oriented digital calculator implementing integer arithmetic, custom floating-point arithmetic, decimal input/output, registers, shifters, sequential division and a clocked control architecture.
 
-## Try Online
+## 🚀 Try Online
 
-Open the project directly in CircuitVerse:
+**[Open Calculator 2.0 in CircuitVerse](https://circuitverse.org/users/277858/projects/calculator-2-0-f989b00f-29e5-4bbf-9f99-15c320fc85be/simulator)**
 
-**[Try Calculator 2.0 Online](https://circuitverse.org/users/277858/projects/calculator-2-0-f989b00f-29e5-4bbf-9f99-15c320fc85be/simulator)**
+No installation required.
 
-No installation is required.
+## 💾 Run Offline
 
-## Run Offline
+Download the complete offline package:
 
-Download:
-
-`Calculator-2.0-Offline.zip`
+**[Calculator-2.0-Offline.zip](./Calculator-2.0-Offline.zip)**
 
 The package contains:
 
-* `Calculator-2.0.cv` — the complete Calculator 2.0 project
+* `Calculator-2.0.cv` — the complete CircuitVerse project
 * `run.sh` — launcher for Linux
 * `run.bat` — launcher for Windows
 * a local CircuitVerse simulator runtime
@@ -44,6 +42,18 @@ run.bat
 ```
 
 Python must be installed on the system.
+
+## Project Source
+
+The canonical CircuitVerse project is:
+
+```text
+Calculator-2.0.cv
+```
+
+It contains all **36 circuits in a single `.cv` project file**.
+
+The source project and offline runtime are distributed together so that the project can be reproduced and explored locally.
 
 ## Architecture
 
