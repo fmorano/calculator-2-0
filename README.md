@@ -43,6 +43,24 @@ run.bat
 
 Python must be installed on the system.
 
+### Import the Calculator 2.0 Project
+
+After starting the offline simulator, import the Calculator 2.0 project:
+
+1. Open the **Project** menu in the CircuitVerse simulator.
+2. Select **Import Project**.
+3. Browse to the extracted `Calculator-2.0-Offline` folder.
+4. Select:
+
+```text
+Calculator-2.0.cv
+```
+
+5. Confirm the import.
+
+The complete Calculator 2.0 project, including all **36 interconnected circuits**, will then be loaded into the local simulator.
+
+
 ## 🎬 Demo
 
 The following demonstration shows Calculator 2.0 performing a complete sequence of chained operations:
