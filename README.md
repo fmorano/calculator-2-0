@@ -75,6 +75,77 @@ The calculation is performed entirely by the digital circuits implemented in the
 
 <video src="https://github.com/user-attachments/assets/db77724a-06a3-43e5-8054-d779186bd469" controls width="800"></video>
 
+## 🧭 Conceptual Map — Suggested Learning Path
+
+Calculator 2.0 contains 36 interconnected circuits. Exploring them in an arbitrary order can quickly become confusing, because some circuits are complete functional blocks that can be studied independently, while others are mainly support circuits used inside larger blocks.
+
+The following path reflects the learning and development path followed during the construction of the project. It is not intended as a mandatory order, but as a practical way to approach the circuits progressively, from the basic arithmetic blocks to the complete calculator.
+
+### 1. Binary Arithmetic
+
+The first step is to study the **binary arithmetic circuits**.
+
+Whenever different versions of the same concept exist with different word lengths, it is preferable to start with the smaller version. The larger versions generally extend the same concept without introducing fundamentally new ideas.
+
+These circuits can be studied and tested independently: by changing the inputs using the switches, the corresponding output can be observed directly.
+
+Start with:
+
+* `my32adder` — 32-bit binary addition
+* `32bit sub` — 32-bit binary subtraction
+* `16bit-product` — 16-bit binary multiplication; `32bit_product` is its larger extension
+* `4 bit division` — 4-bit binary division; `16 bit division` and `32bit division` extend the same concept
+
+At this stage the focus is entirely on understanding how binary arithmetic is implemented in digital logic.
+
+### 2. Binary Floating-Point Arithmetic
+
+Once the basic binary arithmetic is understood, the next step is to examine the circuits with the `FP-` prefix.
+
+These circuits build upon the binary arithmetic blocks studied previously and implement the custom floating-point representation used by Calculator 2.0.
+
+* `FP-ADDER` — 32-bit floating-point addition and subtraction
+* `FP-MULTI` — 32-bit floating-point multiplication
+* `FP-DIVISION` — 32-bit floating-point division
+
+These circuits are particularly important because they form the arithmetic core of the calculator.
+
+### 3. From Decimal Input to Binary
+
+The next question is:
+
+**How does a decimal number entered by the user become a 32-bit binary number that can be processed by the arithmetic circuits?**
+
+Two circuits answer this question.
+
+* `DispInput2` — provides the decimal input interface. The digits are selected using switches and displayed on the output display. Each decimal digit is represented internally as a BCD nibble: 4 bits representing the values from 0 to 9.
+* `8BCD to bin` — converts the eight BCD decimal digits into a 32-bit binary number that can be passed to the binary arithmetic circuits.
+
+This step connects the human-readable decimal input with the binary datapath.
+
+### 4. From Binary Back to Decimal
+
+The reverse process must then be understood:
+
+**How does a binary result become a decimal representation that can be read by a human?**
+
+Two circuits are involved.
+
+* `32BIN to BCD` — converts a 32-bit binary number into its corresponding BCD representation, with each decimal digit represented by 4 bits.
+* `DispOut` — handles the final display representation of a signed floating-point number.
+
+At this point, the complete path from decimal input to binary computation and back to decimal output can be understood.
+
+### 5. Finally: `Main`
+
+Only after understanding the previous blocks does it make sense to approach `Main`.
+
+`Main` is the **general control unit of Calculator 2.0**. It brings together the arithmetic, floating-point, input, conversion and output circuits explored in the previous steps.
+
+Rather than being the starting point of the exploration, `Main` is the point where the concepts studied throughout the project are finally assembled into the complete calculator.
+
+**This is where the exploration of the project comes together.**
+
 
 ## Project Source
 
