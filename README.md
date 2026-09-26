@@ -1,8 +1,12 @@
 # Calculator 2.0
 
-A complete digital calculator designed and built in [CircuitVerse](https://circuitverse.org/), composed of **36 interconnected digital subcircuits**.
+A complete digital calculator **designed and built from scratch in CircuitVerse**, starting from basic logic gates and elementary digital components.
 
-Calculator 2.0 is a hardware-oriented digital calculator implementing integer arithmetic, custom floating-point arithmetic, decimal input/output, registers, shifters, sequential division and a clocked control architecture.
+Calculator 2.0 is not based on pre-built arithmetic or calculator modules imported from external sources. **Every circuit is built from the basic logic gates and elementary components provided by the CircuitVerse simulator.**
+
+The project is designed not only to demonstrate a working calculator, but also to provide a way to **understand how a complete digital calculator can be designed and built from the ground up**. Nothing is assumed: the project progressively exposes the fundamental building blocks, from binary arithmetic and data representation to floating-point operations, input/output conversion and the final control architecture.
+
+Calculator 2.0 is therefore both a working digital calculator and a practical exploration of how a complex digital system can be constructed step by step from elementary logic components.
 
 ## 🚀 Try Online
 
